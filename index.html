@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Company</title>
+    <link rel="icon" href="starbucks.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="starbucks.png" 
+                class="logo" ></a>
+            <ul>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">REWARDS</a></li>
+                <li><a href="#">GIFT CARDS</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2><span>Brewing Moments</span><br>Brewed Yours</h2>
+                <p>
+                    Starbucks Bliss is your perfect coffee escape. Enjoy handcrafted beverages, delicious treats, 
+                    and a cozy atmosphere designed for relaxation or productivity. Whether it’s a quick coffee break 
+                    or quality time with friends, every visit promises warmth and flavor !
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="image">
+                <img src="1.png" 
+                class="coffee">
+            </div>
+        </div>
+        <ul class="thumbnail">
+            <li><img src="1t.png" onclick="imgchanger(`1.png`);
+                circlecolorchanger(`#eb7495`)" ></li>
+            <li><img src="2t.png" onclick="imgchanger(`2.png`);
+            circlecolorchanger(`#037246`)"></li>
+        </ul>
+        <ul class="socail">
+            <li><img src="facebook.png" alt=""></li>
+            <li><img src="instagram.png" alt=""></li>
+            <li><img src="twitter.png" alt=""></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgchanger(anything) {
+            document.querySelector(`.coffee`).
+            src = anything
+        }
+        function circlecolorchanger(color) {
+            const circle = document.querySelector(`.circle`);
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
